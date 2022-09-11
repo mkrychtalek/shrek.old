@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <link rel="icon" type="image/x-icon" href="https://makopog.com/images/favicon.png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Shrek | MakoPog</title>
     <link rel="stylesheet" href="style.css">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <style>
 
         body {
@@ -20,19 +19,42 @@
           font-size: 16px;
         }
 
-        .shrek {
+        .shrek-pc {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
         }
 
+        .mobileShow {
+            display: none;
+        }
+
+        .mobileHide { 
+            display: inline;
+        } 
+
+        .shrek-m {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+        }
+
     </style>
   </head>
   <body>
-    <a href="https://makopog.com/">
-        <img class="shrek" src="https://makopog.com/images/shrek.png">
+    <div class="mobileShow"> 
+        <a href="https://makopog.com/">
+            <img class="shrek-m" src="https://makopog.com/images/shrek.png">
+          </a>
+    </div> 
+
+    <div class="mobileHide">
+      <a href="https://makopog.com/">
+        <img class="shrek-pc" src="https://makopog.com/images/shrek.png">
       </a>
+    </div>
       <h1 class="copyright" style="font-family:Poppins"><i>© MakoPog 2022</i><br>
     </body>
 </html>
